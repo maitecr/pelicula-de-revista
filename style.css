@@ -1,0 +1,377 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+
+/*Seletor para rolagem suave*/
+html {
+    scroll-behavior: smooth;
+}
+
+/*Configurações padrão do projeto, incluindo a fonte a ser usada em todo ele*/
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Inter', sans-serif;
+}
+
+/*Com este marcador, todos os links que forem acessados passarão a ter a cor vermelha*/
+a:visited {
+    color: rgb(166, 49, 49);
+}
+
+/*Definições de estilização do cabeçalho com flex-box para organização da disposição do logo e menu*/
+header {
+    background-color:white;
+    margin: 0px 90px 0px 90px;
+    border-bottom: 2px solid black;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/*Posicionamento do logo*/
+header #logo {
+    margin-left: 280px;
+    padding: 40px;
+    width: 60%;
+}
+
+/*Posicionamento no menu*/
+nav {
+    margin-top: -230px;
+    padding: 15px;
+}
+
+/*Organização da disposição dos elementos do menu com flex-box*/
+.menu {
+    display: flex;
+    flex-direction: row;
+   
+}
+
+/*Retirar decoração apenas das listas não-ordenadas*/
+ul li {
+    list-style: none;
+}
+
+/*Espaçamento (padding) entre os itens do menu, definição de cor e retirar decoração*/
+.menu-item {
+    padding: 10px;
+    text-decoration: none;
+    color: #000000;
+}
+
+/*Definições das margens, centralização da tag e definição dos tamanhos de tela que podem ser exibidos*/
+main {
+    margin: 0px 90px 0px 90px;
+    margin: auto;
+    min-width: 320px;
+    max-width: 1200px;
+
+}
+
+/*Organização da página index*/
+/*Espaçamento no título de cada section*/
+.title-section {
+    padding: 30px;
+}
+
+/*Configurar a disposição dos itens percentencetes à esta div*/
+.news-articles {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    margin-bottom: 30px;
+}
+
+/*Configurar a disposição dos itens desta div*/
+.content-news {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/*Ajustar tamanho, forma e bordas das imagens na seção de notícias */
+.img-news {
+    width: 150px;
+    height: 150px;
+    border-radius: 100%;
+    border-width: 7px;
+    border-style: solid;
+    border-color: rgb(166, 49, 49);
+}
+
+/*Ajustar alinhamento e dimensões dos títulos dos itens que estão na seção de notícias*/
+.news-p {
+    width: 250px;
+    text-align: center;
+    text-decoration: none;
+}
+
+/*Estilização da seção onde se encontram os links para as colunas/artigos*/
+section#articles {
+    border-top: 2px solid #78787834;
+    color: #000000;
+    text-decoration: none;
+}
+
+/*Definição de tamanho das imagens na página index, para os itens das colunas, além de estilização de suas bordas*/
+.img-articles {
+    max-width: 300px;
+    max-height: 250px;
+    width: auto;
+    height: auto;
+    border-radius: 15px;
+    border-width: 7px;
+    border-style: solid;
+    border-color: rgb(166, 49, 49);
+}
+
+/*Ajustar alinhamento e dimensões dos títulos dos itens que estão na seção de colunas no index*/
+.article-p {
+    text-align: center;
+    text-decoration: none;
+}
+
+/*Organização das páginas de colunas*/
+/*Dimensões e alinhamento dos textos de cada página de coluna*/
+.article {
+    margin: 30px 90px 30px 90px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/*Dimensões das imagens que vão ao topo do texto*/
+.img-art {
+    max-width:85%;
+    min-width: 40%;
+    width: auto;
+    height: auto;
+}
+
+/*Espaçamento ao torno do título nas seções de colunas*/
+.title-article {
+    padding: 20px;
+}
+
+/*Alinhamento e dimensões dos textos de cada seção de coluna*/
+.article-text {
+    padding: 20px;
+    text-indent: 50px;
+    text-align: justify;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+/*Estilização da tabela*/
+/*Estilização e espaçamento da tabela*/
+table {
+    padding: 5px;
+    border: 3px solid;
+    border-collapse: collapse;
+}
+
+/*Estilização dos dados(table-data) da tabela*/
+table td {
+    padding: 3px;
+    border: 2px solid;
+}
+
+
+/*Botões de retornar e avançar*/
+/*Estilização, disposição e dimensão dos botões de retornar e avançar nas páginas de colunas*/
+.article-button {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-around;
+    align-items: center;
+    gap: 100%;
+    padding: 20px 20px 0px 20px;
+}
+
+.next-button {
+    background-color: #ffffff;
+    width: 80px;
+    height: 40px;
+    font-weight: 800;
+    border: 2px solid #793636;
+    border-radius: 20px;
+    box-shadow: 4px 5px 4px rgba(0, 0, 0, 0.25);
+    cursor: pointer;
+}
+
+.back-button {
+    background-color: #ffffff;
+    width: 80px;
+    height: 40px;
+    font-weight: 800;
+    border: 2px solid #793636;
+    border-radius: 20px;
+    box-shadow: 4px 5px 4px rgba(0, 0, 0, 0.25);
+    cursor: pointer;
+}
+
+/*Estilização do formulário na página de contatos*/
+/*Dimensões e disposições dos campos do formulário*/
+form {
+    margin: 30px 180px 0px 180px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+/*Dimensionamento e disposição específicos para o campo de gênero que se encontra dentro de uma div*/
+.genre {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 20px;
+}
+
+/*Cofigurações de disposição do botão de submit do formulário*/
+.form-button {
+    display: inline-block;
+    margin: auto;
+}
+
+/*Dimensões do botão de submit do formulário*/
+input#button-form {
+    width: 60px;
+    height: 40px;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+/*Organização do rodapé*/
+/*Dimensões e borda do rodapé*/
+footer {
+    margin: 30px 90px 30px 90px;
+    border-top: 2px solid black;
+}
+
+/*Diposição dos itens encontrado dentro do rodapé*/
+.information {
+    margin: 20px 0px 0px 0px;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-around;
+    
+}
+
+/*Media Query para dispositivo móvel portait*/
+@media only screen and (min-width: 320px) and (max-width: 600px) {
+   [class*=col-] {
+        width: 100%;
+   }
+
+/*Em termos gerais, todos os itens presentes nas páginas foram realinhados em coluna, através do flex-box; redimensionados para ocupar certa porcentagem de espaço de cada página e, assim, adaptar-se ao tamanho de telas em orientação retrato, de acordo com os tamanhos entre 320px e 600px (tamanho compartível com celulares, tablets e e-readers)*/
+
+   /*Media Query: menu e logo*/
+   /*Disposição realinhada e redimensionamento de menu e logo*/
+   header {
+       flex-direction: column;
+       align-items: center;
+    }
+
+    nav {
+        padding: auto;
+        margin-top: 0px;
+    }
+
+    header #logo {
+        width: 100%;
+        padding: 0px;
+        margin-left: 0px;
+    }
+
+    /*Media Query: página index*/
+    /*Realinhamento e redimesionamentos dos itens presente na página index*/
+    main {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 10px;
+    }
+
+    section {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .news-articles {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+    
+    .content-news {
+        margin-top: 20px;
+    }
+
+    .content-articles {
+        margin-top: 20px;
+    }
+
+    /*Media Query: para a página de colunas*/
+    /*Realinhamento e redimencionamento para as páginas que estarão as colunas*/
+    .article {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 75%;
+    }
+
+    .img-art {
+        width: 100%;
+    }
+
+    .title-article {
+        text-align: center;
+    }
+
+    .article-text {
+        padding: 15px 0px 15px 0px;
+        text-indent: 30px;
+        text-align: justify;
+    }
+
+    .table-list {
+        padding: 0px 0px 15px 0px;
+    }
+
+    iframe {
+        width: 100%;
+        padding: 15px 0px 0px 0px;
+    }
+
+    /*Media Query: página de contato*/
+    form {
+        display: flex;
+        flex-direction: column;
+        margin: 20px 50px 0px 50px;
+    }
+
+    textarea#message {
+        width: 100%;
+    }
+
+    input#button-form {
+        width: 60px;
+        height: 40px;
+        font-size: 15px;
+        
+    }
+
+    /*Media Query: footer*/
+    .information {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .academics-presenter {
+        margin-top: 20px;
+    }
+}

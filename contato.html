@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Película de Revista</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="script.js"></script>
+</head>
+<body>
+    <header class="header">
+         <!--Menu, em linhas não-ordenadas, com link para direcionamento das páginas linkadas-->
+        <nav>
+           <ul class="menu">
+                <ul><a class="menu-item" href="index.html#news"> Notícias </a></ul>
+                <ul><a class="menu-item" href="coluna01.html"> Colunas </a></ul>
+                <ul><a class="menu-item" href="contato.html"> Contato </a></ul>
+            </ul>
+        </nav>
+
+        <!--Logo principal do site, com link para retornar à página index-->
+        <a href="index.html"> <img id="logo" src="img/logo01.png" alt="logo"> </a>
+
+    </header>
+
+    <!--Formulário em método get, contém espaço para: nome, e-mail, telefone, gênero, seleção e caixa de texto. O formulário também está validado pelo JavaScript, através de um evento "onclick" no botão de submit-->
+    <main class="content">
+        <form action="contato.html" method="get" name="contato_form">
+            <!--Espaço para preenchimento de nome-->
+            <label for="first-name">Nome</label>
+            <input type="text" id="nome" name="nome" size="50" autofocus>
+
+            <!--Espaço para preenchimento de e-mail-->
+            <label for="email">E-mail</label>
+            <input type="email" id="email" name="email" size="50">
+
+            <!--Espaço para preenchimento de telefone-->
+            <label for="tel">Telefone</label>
+            <input type="tel" id="tel" name="tel" size="50">
+            
+            <!--Espaço para marcação de gênero-->
+            <div class="genre">
+                <label for="sex">Informe seu gênero: </label>
+                <div>
+                <input type="radio" id="m" name="genero" value="m">
+                <label for="m">Masculino</label>
+                </div>
+                <div>    
+                <input type="radio" id="f" name="genero" value="f">
+                <label for="m">Feminino</label>
+                </div>
+                <div>
+                <input type="radio" id="o" name="genero" value="o">
+                <label for="m">Outro</label>   
+                </div>
+            </div>
+            
+            <!--Espaço para seleção de resposta para a pergunta abaixo-->
+            <label for="como">Como conheceu a revista?</label>
+            <select name="quest" id="quest">
+                <option>Selecione</option>
+                <option value="face">Facebook</option>
+                <option value="insta">Instagram</option>
+                <option value="google">Google</option>
+                <option value="indicacao">Indicação</option>
+                <option value="outro">Outro</option>
+            </select>
+            
+            <!--Espaço para preenchimento de mensagem-->
+            <label for="message">Mensagem</label>
+            <textarea name="message" id="message" cols="114" rows="10" input></textarea>
+            
+            <!--Botão de envio do formulário com evento 'onclcick'-->
+            <div class="form-button">
+                <input id="button-form" type="submit" value="Enviar" onclick="validateForm()">
+            </div>
+        </form>
+    </main>
+
+
+    <footer>
+        <!--Rodapé contendo informações da estudante, instituição, disciplina e professor. Itens alocados dentro de divs para que se possa trabalhar na disposição e dimensionamento através do css-->
+        <div class="information">  
+            <div class="academics-presenter">  
+                <h4>Instituto Federal Sul-rio-grandense</h4>
+                <h4>Análise e Desenvolvimento de Sistemas</h4>
+                <h5>Programação para Internet I - Profº Felipe</h5>
+            </div>
+            <div class="academics-presenter">
+                <h4>Estudante: Maitê Capistrano Refosco</h4>
+                <h4>E-mail: maicapref@gmail.com</h4>
+            </div>
+        </div>
+    </footer>
+    
+</body>
+</html>

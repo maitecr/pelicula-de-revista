@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A heroína (quase esquecida) da animação
+    </title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <header class="header">
+        <!--Menu, em linhas não-ordenadas, com link para direcionamento das páginas linkadas-->
+        <nav>
+           <ul class="menu">
+                <ul><a class="menu-item" href="index.html#news"> Notícias </a></ul>
+                <ul><a class="menu-item" href="#articles"> Colunas </a></ul>
+                <ul><a class="menu-item" href="contato.html"> Contato </a></ul>
+            </ul>
+        </nav>
+        <!--Logo principal do site, com link para retornar à página index-->
+        <a href="index.html"> <img id="logo" src="img/logo01.png" alt="logo"> </a>
+
+    </header>
+
+
+    <main class="content">
+        <!--Página e seção da primeira coluna/artigo apresentados no index-->
+        <!--Seção que mantém a mesma classe presentes nas páginas coluna02 e coluna03, para estilização pelo css-->
+        <section class="article">
+            <!--Imagem de abertura da coluna-->
+            <img src="img/lotte02.jpg" class="img-art" alt="Lotte">
+
+            <!--Título da matéria-->
+            <h1 class="title-article">A heroína (quase esquecida) da animação</h1>
+
+            <!--Texto da matéria alocado em uma div para que seja feito o ajustamento de dimensão e alinhamento-->
+            <div class="article-text">
+                <p>Charlotte Reiniger, popularmente conhecia como "Lotte", foi uma diretora e produtora de animação do século passado.</p>
+                <p>Durante sua carreira, contribuiu para a área do cinema inovando de diversas formas, elaborando novas técnicas de filmagem. No entanto, apesar de ter o reconhecimento no âmbito dos profissionais da área, ela não tem toda essa popularidade para o público geral</p>
+                <p>Segue abaixo um vídeo, produzido por Max Valarezo, do canal Entre Planos, que conta um pouco mais sobre a Lotte e suas contribuições.</p>
+            </div>
+
+            <!--Incorporação de vídeo disponível no youtube-->
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/w4FvrDyeJtw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+            <!--Botões de retornar e avançar páginas-->
+            <div class="article-button">
+                <a href="coluna02.html"><button class="next-button">PRÓXIMA</button></a>
+                <a href="coluna03.html"><button class="back-button">ANTERIOR</button></a>
+            </div>
+        </section>
+
+    </main>
+
+
+     <!--Rodapé contendo informações da estudante, instituição, disciplina e professor. Itens alocados dentro de divs para que se possa trabalhar na disposição e dimensionamento através do css-->
+    <footer>
+        <div class="information">  
+            <div class="academics-presenter">  
+                <h4>Instituto Federal Sul-rio-grandense</h4>
+                <h4>Análise e Desenvolvimento de Sistemas</h4>
+                <h5>Programação para Internet I - Profº Felipe</h5>
+            </div>
+            <div class="academics-presenter">
+                <h4>Estudante: Maitê Capistrano Refosco</h4>
+                <h4>E-mail: maicapref@gmail.com</h4>
+            </div>
+        </div>
+    </footer>
+    
+</body>
+</html>

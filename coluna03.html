@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Os amores de Wong Kar-Wai</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <header class="header">
+        <!--Menu, em linhas não-ordenadas, com link para direcionamento das páginas linkadas-->
+        <nav>
+           <ul class="menu">
+                <ul><a class="menu-item" href="index.html#news"> Notícias </a></ul>
+                <ul><a class="menu-item" href="coluna01.html"> Colunas </a></ul>
+                <ul><a class="menu-item" href="contato.html"> Contato </a></ul>
+            </ul>
+        </nav>
+
+        <!--Logo principal do site, com link para retornar à página index-->
+        <a href="index.html"> <img id="logo" src="img/logo01.png" alt="logo"> </a>
+
+    </header>
+
+
+    <main class="content">
+        <!--Seção que mantém a mesma classe presentes nas páginas coluna01 e coluna02, para estilização pelo css-->
+        <section class="article">
+            <!--Imagem de abertura da coluna-->
+            <img src="img/wonkarwai02.jpg" class="img-art" alt="">
+            
+            <!--Título da matéria-->
+            <h1 class="title-article">Os amores de Wong Kar-Wai</h1>
+            
+             <!--Texto da matéria alocado em uma div para que seja feito o ajustamento de dimensão e alinhamento-->
+            <div class="article-text">
+                <p>Desde quando a pandemia começou, hábitos culturais como assistir a uma peça de teatro ou filme se tornaram restritos ao ambiente doméstico. Ultimamente, é dentro de casa que embarcamos em histórias e viajamos para outros tempos e mundos — uma forma de escape necessária enquanto o mundo real está demasiado perigoso. Para quem é fã de cinema, agora pode ser o momento de rever aquele filme inesquecível que você, na verdade, já esqueceu, ou ver pela primeira vez aquela obra cult que sempre ouviu falar. </p>
+                <p>A MUBI, parceira da SP-Arte em 2021, é uma das plataformas de streaming de cinema mais interessantes à disposição dos cinéfilos hoje. O site oferece um catálogo privilegiado, com uma curadoria feita à mão por especialistas da sétima arte. Dentre as séries especiais agora em cartaz, destacamos “Apaixonante. O cinema de Wong Kar Wai”, que apresenta versões restauradas das principais obras do grande expoente do cinema de Hong Kong. Em uma entrevista para o Notebook, revista eletrônica da MUBI, questionado sobre como a pandemia vem afetando o cinema, o mestre diz: “Hoje em dia, é preciso menos esforço para transmitir um filme em casa. No entanto, o streaming não deve afetar fundamentalmente a forma como um filme é feito, contanto que o prazer de assistir a filmes não mude e nós, como cineastas, continuemos a servir a esse propósito.”</p>
+                <p>As histórias de Kar Wai apresentam as muitas faces (e fases) do amor, capturando as sutilezas do desabrochar de um romance ou da desilusão de um término. Muitas vezes seus personagens vivenciam os encontros e desencontros do desejo solitariamente, em um retrato impactante das relações contemporâneas. Uma das grandes marcas de Kar Wai é a experiência estética oferecida por suas obras em cores exuberantes, com trilha sonora atmosférica e cirúrgica e diversos efeitos de pós-produção. </p>
+            </div>
+
+            <!--Tabela contendo lista de filmes-->
+            <div class="table-list">
+               <table>
+                    <caption>Filmes disponíveis no Mubi</caption>
+
+                    <thead>
+                       <tr>
+                           <td>Título</td>
+                           <td>Ano</td>
+                       </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Chungking Express</td>
+                            <td>1994</td>
+                        </tr>
+                        <tr>
+                            <td>Fallen Angels</td>
+                            <td>1995</td>
+                        </tr>
+                        <tr>
+                            <td>Happy Together</td>
+                            <td>1997</td>
+                        </tr>
+                        <tr>
+                            <td>In the mood for love</td>
+                            <td>2000</td>
+                        </tr>
+                        <tr>
+                            <td>2046</td>
+                            <td>2004</td>
+                        </tr>
+                        <tr>
+                            <td>The Hand</td>
+                            <td>2004</td>
+                        </tr>
+                        <tr>
+                            <td>Ashe of time redux</td>
+                            <td>2008</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <!--Referências de onde o texto foi copiado-->
+            <div class="references">
+                <h4>Fonte</h4>
+                <p>https://www.sp-arte.com/editorial/os-amores-de-wong-kar-wai/</p>
+            </div>
+
+            <!--Botões de retornar e avançar páginas-->
+            <div class="article-button">
+                <a href="coluna01.html"><button class="next-button">PRÓXIMA</button></a>
+                <a href="coluna02.html"><button class="back-button">ANTERIOR</button></a>
+            </div>
+        </section>
+    </main>
+
+    <!--Rodapé contendo informações da estudante, instituição, disciplina e professor. Itens alocados dentro de divs para que se possa trabalhar na disposição e dimensionamento através do css-->
+    <footer>
+        <div class="information">  
+            <div class="academics-presenter">  
+                <h4>Instituto Federal Sul-rio-grandense</h4>
+                <h4>Análise e Desenvolvimento de Sistemas</h4>
+                <h5>Programação para Internet I - Profº Felipe</h5>
+            </div>
+            <div class="academics-presenter">
+                <h4>Estudante: Maitê Capistrano Refosco</h4>
+                <h4>E-mail: maicapref@gmail.com</h4>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

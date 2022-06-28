@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Película de Revista</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="script.js"></script>
+</head>
+<body>
+    <header class="header">
+        <!--Menu, em linhas não-ordenadas, com link para direcionamento das páginas linkadas-->
+        <nav>
+           <ul class="menu">
+                <ul><a class="menu-item" href="#news"> Notícias </a></ul>
+                <ul><a class="menu-item" href="coluna01.html"> Colunas </a></ul>
+                <ul><a class="menu-item" href="contato.html"> Contato </a></ul>
+            </ul>
+        </nav>
+
+        <!--Logo principal do site, com link para retornar à página index-->
+        <a href="index.html"> <img id="logo" src="img/logo01.png" alt="logo"> </a>
+
+    </header>
+
+
+   <main class="content">
+       <!--Seção destinada às notícias principais, logo na abertura do site-->
+        <section id="news">
+            <!--Título da seção-->
+            <h3 class="title-section">Notícias</h3>
+            <div class="news-articles">
+                <!--Cada div "content-news" possui imagem, parágrafo (que serve como título) e links tantos nas imagens como no "título". Elas estão localizadas dentro de 4 divs (ou seja, 4 notícias), para que se possa configurar sua disposição e estilização através do css-->
+                <div class="content-news">
+                    <!--As imagens, tanto na seção de notícias, como a de colunas, possuem 2 Eventos: 'onmouseenter' e 'onmouseout'. Esses eventos alteram as imagens de acordo com a movimentação do cursor em cima e fora delas.-->
+                   <a href="https://mubi.com/pt/showing" target="_blank"> <img class="img-news" src="img/drivemycar01-300.jpg" alt="Drive My Car" id="drive" onmouseenter="changeImg01('img/drivemycar03-300.jpg')" onmouseout="changeImg01('img/drivemycar01-300.jpg')"> </a>
+                   <a href="https://mubi.com/pt/showing" class="news-p" target="_blank"> <p>Drive My Car: vencedor do Oscar diponível no Mubi!</p> </a>
+                </div>
+
+                <div class="content-news">
+                   <a href="https://www.youtube.com/watch?v=7GQtuTpfKt8" target="_blank"> <img class="img-news" src="img/medidaprovisoria01-300.jpg" alt="Medida Provisória" id="medida" onmouseenter="changeImg02('img/medidaprovisoria02-300.jpg')" onmouseout="changeImg02('img/medidaprovisoria01-300.jpg')"> </a>
+                   <a href="https://www.youtube.com/watch?v=7GQtuTpfKt8"  class="news-p" target="_blank"> <p>Medida Provisória: estréia da direção de Lázaro Ramos!</p> </a>
+                </div>
+
+                <div class="content-news">
+                   <a href="https://www.ufrgs.br/difusaocultural/sala-redencao-da-inicio-a-programacao-comemorativa-de-seus-35-anos/" target="_blank"> <img class="img-news" src="img/salaredencao01-300.jpg" alt="Sala Redenção" id="redencao" onmouseenter="changeImg03('img/salaredencao02-300.jpg')" onmouseout="changeImg03('img/salaredencao01-300.jpg')"> </a>
+                   <a href="https://www.ufrgs.br/difusaocultural/sala-redencao-da-inicio-a-programacao-comemorativa-de-seus-35-anos/" class="news-p" target="_blank"> <p>35 anos de Sala Redenção: Cinema dos anos 80!</p> </a>
+                </div>
+
+                <div class="content-news">
+                    <a href="https://www.festival-cannes.com/en/" target="_blank"> <img class="img-news" src="img/cannes01-300.jpg" alt="Festival de Cannes" id="cannes" onmouseenter="changeImg07('img/cannes02-300.jpg')" onmouseout="changeImg07('img/cannes01-300.jpg')"> </a>
+                    <a href="https://www.festival-cannes.com/en/" class="news-p" target="_blank"> <p>Festival de Cannes 2022: de 17 a 28 de Maio</p> </a>
+                </div>
+            </div>
+        </section>
+
+        <!--Seção para apresentação das colunas existentes no site-->
+        <section id="articles">
+            <h3 class="title-section">Colunas</h3>
+            <div class="news-articles">
+                <!--Assim como as notícias, as colunas/artigos, também se encontram dentro de divs (3 delas), para que possa ser feito seu ajuste de disposição e dimensionamento através do css. Também constam nelas imagens e parágrafos, que servem como seus respectivos títulos, junto com links para direcionamento de páginas-->
+                <div class="content-articles">
+                    <a href="coluna01.html"> <img class="img-articles" src="img/lotte01.jpg" alt="Lotte" id="lotte" onmouseenter="changeImg05('img/lotte03.jpg')" onmouseout="changeImg05('img/lotte01.jpg')"> </a>
+                    <a href="coluna01.html" class="article-p"> <p>A heroína (quase esquecida) da animação</p> </a>
+                </div>
+
+                <div class="content-articles">
+                    <a href="coluna02.html"> <img class="img-articles" src="img/ghibli01-700.jpg" alt="Tonari no Totoro" id="totoro" onmouseenter="changeImg04('img/vidaovento01-700.jpg')" onmouseout="changeImg04('img/ghibli01-700.jpg')"> </a>
+                    <a href="coluna02.html" class="article-p"> <p>Como animações podem retratar doenças</p> </a>
+                </div>
+
+                <div class="content-articles">
+                    <a href="coluna03.html"> <img class="img-articles" src="img/wonkarwai01-700.jpg" alt="Wong Kar-Wai" id="wong" onmouseenter="changeImg06('img/wonkarwai03-700.jpg')" onmouseout="changeImg06('img/wonkarwai01-700.jpg')"> </a>
+                    <a href="coluna03.html" class="article-p"> <p>Os amores de Wong Kar-Wai</p> </a>
+                </div>
+            </div>
+
+        </section>
+   </main>
+
+
+    <footer>
+        <!--Rodapé contendo informações da estudante, instituição, disciplina e professor. Itens alocados dentro de divs para que se possa trabalhar na disposição e dimensionamento através do css-->
+        <div class="information">  
+            <div class="academics-presenter">  
+                <h4>Instituto Federal Sul-rio-grandense</h4>
+                <h4>Análise e Desenvolvimento de Sistemas</h4>
+                <h5>Programação para Internet I - Profº Felipe</h5>
+            </div>
+            <div class="academics-presenter">
+                <h4>Estudante: Maitê Capistrano Refosco</h4>
+                <h4>E-mail: maicapref@gmail.com</h4>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
